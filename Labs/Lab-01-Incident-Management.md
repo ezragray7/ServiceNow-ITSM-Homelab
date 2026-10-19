@@ -29,9 +29,9 @@ An employee reports that their work computer cannot connect to the internet, pre
 - [x] Opened the saved incident details.
 - [x] Verified the incident number and current state.
 - [x] Observed the displayed urgency, impact, and priority values.
-- [ ] Practice updating the incident during troubleshooting.
-- [ ] Resolve the incident after documenting a simulated resolution.
-- [ ] Verify the incident's final state.
+- [x] Practice updating the incident during troubleshooting.
+- [x] Resolve the incident after documenting a simulated resolution.
+- [x] Verify the incident's final state.
 
 ## Procedures Used
 
@@ -109,10 +109,12 @@ The next stage of this lab will involve documenting simulated troubleshooting ac
 
 <img width="1512" height="752" alt="Screenshot 2026-10-19 at 4 53 19 PM" src="https://github.com/user-attachments/assets/9e72dffb-92a3-48c4-bcf0-74d2b3d9670e" />
 
+<img width="1359" height="366" alt="Screenshot 2026-10-19 at 5 05 07 PM" src="https://github.com/user-attachments/assets/7ac77da5-c0ce-4bf0-bad6-730980f35913" />
+
+<img width="1512" height="756" alt="Screenshot 2026-10-19 at 5 29 28 PM" src="https://github.com/user-attachments/assets/c44a58ce-2c41-4d14-852a-bc6382e1a830" />
+
+
 ## Lab Status
 
-**In Progress**
-
-Incident creation and verification are complete. Updating and resolving the incident remain to be practiced before this lab can be marked complete.
-
+**Complete**
 
