@@ -234,3 +234,87 @@ Inspecting the existing rules and timer configuration without modifying them red
 
 ## Outcome
 Successfully reviewed existing SLA configurations and verified three priority-based Task SLA records on a simulated incident. No existing SLA definitions, condition rules, timer configurations, or Task SLA records were modified during this exercise.
+
+# Lab 03 — Part 3: SLA Validation and Evidence
+
+## Objective
+Validate the relationship between incident priority and Service Level Agreement (SLA) tracking in ServiceNow. Observe an active SLA timer and capture evidence of its progression.
+
+## Environment
+- Platform: ServiceNow Personal Developer Instance (PDI)
+- Module: Service Desk → Incidents
+- Related list: Task SLAs
+- Incident: Lab 03 - Multiple employees unable to access a business-critical application
+
+## Security Focus
+- Validate SLA tracking against incident priority.
+- Observe changes in remaining business time.
+- Confirm that SLA records can be monitored directly from an incident.
+- Capture evidence of active SLA tracking for technical documentation.
+
+## Tasks Completed
+
+### 1. Verified Incident Priority
+Opened the existing Lab 03 training incident and reviewed its current priority fields.
+
+| Field | Value |
+|---|---|
+| Impact | 1 - High |
+| Urgency | 1 - High |
+| Priority | 1 - Critical |
+
+The observed priority matched the impact and urgency combination tested in Part 1.
+
+### 2. Reviewed the Priority 1 Resolution SLA
+Located the Priority 1 resolution record in the incident's Task SLAs related list.
+
+During the earlier review, the record showed 20 minutes of business time remaining. During this validation, it showed 1 minute remaining.
+
+| Field | Observed value |
+|---|---|
+| SLA definition | Priority 1 resolution |
+| Stage | In Progress |
+| Business time left | 1 minute |
+
+### 3. Validated SLA Timer Progression
+Revisited the Task SLAs related list and observed that the Priority 1 resolution SLA's remaining business time had decreased from 20 minutes to 1 minute.
+
+The SLA remained in the In Progress stage during the final check.
+
+This demonstrated that the displayed SLA timer was progressing while the SLA remained active.
+
+### 4. Captured Validation Evidence
+Captured a screenshot showing the incident's critical priority and the Priority 1 resolution SLA with its current stage and remaining business time.
+
+## Security Analysis
+SLA monitoring helps IT support teams track time-sensitive incident resolution commitments. When an incident has high impact and high urgency, its critical priority can help support personnel recognize the need for prompt attention.
+
+Reviewing the Task SLAs related list provides visibility into the SLA lifecycle and remaining business time. However, an SLA countdown alone does not establish whether an incident has been resolved or whether an SLA target has been breached. Those outcomes require checking the record's later state and relevant SLA results.
+
+This exercise used a simulated training incident and did not represent a real production outage.
+
+## Key Takeaways
+- Incident priority can be validated against impact and urgency.
+- Task SLA records expose the current lifecycle stage and remaining business time.
+- SLA timer values can change as time passes.
+- SLA records should be monitored alongside the underlying incident state.
+- Evidence screenshots help demonstrate configuration review and operational validation.
+
+## Skills Demonstrated
+- ServiceNow incident management
+- Impact and urgency validation
+- Priority verification
+- SLA lifecycle monitoring
+- Task SLA record inspection
+- Technical evidence collection
+- ITSM documentation
+
+## Evidence Screenshots
+
+<img width="1512" height="749" alt="Screenshot 2026-10-21 at 1 56 11 PM" src="https://github.com/user-attachments/assets/0faf6e6e-3111-45e0-ad21-fcadaf7b1a70" />
+
+<img width="1512" height="749" alt="Screenshot 2026-10-21 at 1 56 28 PM" src="https://github.com/user-attachments/assets/04ad440e-17ff-49e9-8033-a9128c1c9965" />
+
+
+## Outcome
+Successfully validated the critical-priority training incident and observed the Priority 1 resolution SLA's remaining business time decrease from 20 minutes to 1 minute while its stage remained In Progress. Captured screenshot evidence of the final observed state.
