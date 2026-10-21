@@ -121,5 +121,116 @@ The simulated scenario and explanatory work notes also demonstrate the importanc
 
 ---
 
+# Lab 03 — Part 2: SLA Management
+
+## Objective
+Inspect ServiceNow Service Level Agreement (SLA) definitions, review SLA condition rules and timer configurations, and verify SLA tracking on a simulated incident.
+
+## Environment
+- Platform: ServiceNow Personal Developer Instance (PDI)
+- Module: SLA Definitions
+- Module: SLA Condition Rules
+- Module: SLA Timer Configuration
+- Related list: Task SLAs
+
+## Security Focus
+- Understand how SLA configurations support incident response and resolution targets.
+- Review existing configuration without modifying system-level settings.
+- Observe how ServiceNow tracks SLA progress, elapsed time, and cancellation states.
+
+## Tasks Completed
+
+### 1. Reviewed an Existing SLA Definition
+Opened the existing **Priority 1 resolution (1 Hour)** SLA definition and reviewed its configuration.
+
+Observed settings:
+- Duration: 1 hour
+- Schedule source: No schedule
+- Active: Enabled
+- Start condition: Condition builder available
+- Stop condition: Blank
+- Pause condition: Blank
+
+No changes were made to the existing SLA definition.
+
+### 2. Inspected SLA Condition Rules
+Reviewed the available records in the SLA Condition Rules module.
+
+| Rule | Class name | Review result |
+|---|---|---|
+| Default | SLA Condition Base | Active; Application and Class name fields present |
+| Issue auto resolution | AutoResolutionSLACondition | Inspected; Application and Class name fields present |
+| simple | SLAConditionSimple | Inspected; Application and Class name fields present |
+
+The existing rules were inspected without modification.
+
+### 3. Reviewed SLA Timer Configuration
+Opened an existing timer configuration record.
+
+| Field | Observed value |
+|---|---|
+| Name | Do not show sla timer |
+| SLA Timer Source | None |
+| Show cancelled | False |
+| Show completed | False |
+
+No timer configuration changes were made.
+
+### 4. Verified Task SLA Records on a Training Incident
+Opened the simulated incident:
+
+**Lab 03 - Multiple employees unable to access a business-critical application**
+
+Located the Task SLAs related list and confirmed that it contained three records:
+- Priority 1 resolution
+- Priority 2 resolution
+- Priority 3 resolution
+
+The related list exposed SLA definition, type, target, stage, business time remaining, business elapsed time, elapsed percentage, start time, and stop time.
+
+### 5. Recorded SLA Tracking Results
+
+| SLA definition | Type | Target | Stage | Business time left | Business elapsed time | Elapsed percentage |
+|---|---|---|---|---|---|---|
+| Priority 1 resolution | SLA | Resolution | In Progress | 20 minutes | 39 minutes | 66.39% |
+| Priority 2 resolution | SLA | Resolution | Cancelled | 7 hr 52 min | 7 minutes | 1.62% |
+| Priority 3 resolution | SLA | Resolution | Cancelled | 23 hr 55 min | 4 minutes | 0.32% |
+
+These values reflect the records observed during the lab. The Priority 2 and Priority 3 records were in the Cancelled stage, while Priority 1 was In Progress.
+
+The precise reasons for cancellation were not established during this exercise.
+
+## Security Analysis
+SLA tracking provides visibility into how much time remains before a resolution target is reached and how much time has elapsed. This can help support teams monitor service commitments and prioritize incident handling.
+
+The Task SLAs related list also demonstrates that multiple SLA records can be associated with a single incident. A cancelled SLA record should not automatically be interpreted as a resolved incident; the incident's state and the SLA's lifecycle are separate details that should be reviewed together.
+
+Inspecting the existing rules and timer configuration without modifying them reduced the risk of unintentionally affecting other records or platform behavior.
+
+## Key Takeaways
+- ServiceNow provides configurable SLA definitions with duration and lifecycle conditions.
+- SLA condition rules and timer configurations are separate configuration areas.
+- Task SLAs can be reviewed directly from an incident record.
+- SLA records expose timing information such as remaining business time, elapsed business time, and elapsed percentage.
+- SLA records can have different lifecycle stages, including In Progress and Cancelled.
+- Existing platform configurations should be inspected carefully before making changes.
+
+## Skills Demonstrated
+- ServiceNow ITSM navigation
+- SLA definition inspection
+- SLA condition rule review
+- SLA timer configuration review
+- Incident SLA tracking and validation
+- SLA lifecycle and timing analysis
+- Configuration review without unnecessary system changes
+- Technical documentation and evidence collection
+
+## Evidence Screenshots
+
+<img width="1512" height="750" alt="Screenshot 2026-10-21 at 1 13 49 PM" src="https://github.com/user-attachments/assets/d36fc3c2-b53d-497a-bb14-780db1bbbd4f" />
+
+<img width="1512" height="696" alt="Screenshot 2026-10-21 at 1 41 18 PM" src="https://github.com/user-attachments/assets/b9cbc488-3f1c-4250-9a34-3575932f1323" />
 
 
+## Outcome
+Successfully reviewed existing SLA configurations and verified three priority-based Task SLA records on a simulated incident. No existing SLA definitions, condition rules, timer configurations, or Task SLA records were modified during this exercise.
