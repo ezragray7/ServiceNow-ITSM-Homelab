@@ -115,3 +115,75 @@ The training article contains general account troubleshooting guidance and does 
 <img width="1512" height="750" alt="Screenshot 2026-10-22 at 8 22 28 AM" src="https://github.com/user-attachments/assets/2db8c260-d3c2-4583-9bad-b4e6f4236d46" />
 
 <img width="1512" height="446" alt="Screenshot 2026-10-22 at 8 23 34 AM" src="https://github.com/user-attachments/assets/07c69675-f22e-45d3-8608-e42ac5dd87c2" />
+
+# Lab 04 — Part 3: Validate Knowledge Access
+
+## Objective
+Validate that a published ServiceNow knowledge article can be found and opened through the Knowledge portal, and inspect the reader-facing features available for the article.
+
+## Environment
+- Platform: ServiceNow Personal Developer Instance (PDI)
+- Module: Self-Service > Knowledge
+- Knowledge Base: IT Knowledge Base
+- Article: Troubleshooting Common Account Login Issues
+
+## Tasks Completed
+- [x] Opened the published article through the regular Knowledge portal.
+- [x] Verified that the article content was visible.
+- [x] Identified reader-facing feedback controls.
+- [x] Selected Helpful and received a confirmation message.
+- [x] Verified that feedback records appeared in the article's Feedback tab.
+- [x] Observed three feedback records created after selecting Helpful three times during screenshot capture.
+- [x] Checked the Related Articles section.
+- [x] Confirmed that no related articles were displayed.
+- [x] Checked for attachments and downloadable links.
+- [x] Confirmed that no attachments or links were available.
+- [x] Searched the Knowledge portal for the article title.
+- [x] Confirmed that the article appeared in search results.
+
+## Access Validation Results
+
+### Article Visibility
+The article opened successfully through the regular Knowledge portal after its workflow reached Published.
+
+### Search Discoverability
+Searching for "Troubleshooting Common Account Login Issues" returned the article in the Knowledge portal results.
+
+### Reader Feedback
+Selecting Helpful displayed a feedback confirmation message. The article's Feedback tab subsequently showed three records, corresponding to the three clicks performed during screenshot capture.
+
+### Related Articles
+The Related Articles section was available, but no related articles were displayed.
+
+### Attachments and Links
+No attachments or downloadable links were available for the article.
+
+## Security Analysis
+The published article provides general account troubleshooting guidance and reminds readers not to share passwords or include them in support tickets.
+
+The exercise validated basic article visibility and feedback behavior. It did not test access using a separate user account or verify role-based access restrictions.
+
+## Key Takeaways
+- Published knowledge articles can be opened through the regular Knowledge portal.
+- Articles can be discovered through Knowledge search.
+- Reader feedback can be submitted and recorded.
+- Related articles may be absent when no related content is configured.
+- Attachments and links are only available when provided with the article.
+- Testing a reader-facing page does not, by itself, prove that role-based access controls are correctly configured.
+
+## Skills Demonstrated
+- ServiceNow Knowledge Management
+- Knowledge article search and discovery
+- Reader-facing article validation
+- Feedback feature testing
+- Knowledge content verification
+- Basic security and access-validation documentation
+
+## Evidence
+<img width="1512" height="755" alt="Screenshot 2026-10-22 at 8 28 33 AM" src="https://github.com/user-attachments/assets/45ebd426-3d2f-4d04-8afa-9927696288d5" />
+
+<img width="1512" height="755" alt="Screenshot 2026-10-22 at 8 32 23 AM" src="https://github.com/user-attachments/assets/f4a650b1-9f99-480c-88fd-5cd87ab68151" />
+
+<img width="1512" height="353" alt="Screenshot 2026-10-22 at 8 33 50 AM" src="https://github.com/user-attachments/assets/a1316974-badc-49e5-8a32-c321ee0c0299" />
+
+<img width="1512" height="757" alt="Screenshot 2026-10-22 at 8 39 18 AM" src="https://github.com/user-attachments/assets/ae6a8ee0-0eac-42ee-9c8c-cf8b867666e9" />
