@@ -187,3 +187,52 @@ The exercise validated basic article visibility and feedback behavior. It did no
 <img width="1512" height="353" alt="Screenshot 2026-10-22 at 8 33 50 AM" src="https://github.com/user-attachments/assets/a1316974-badc-49e5-8a32-c321ee0c0299" />
 
 <img width="1512" height="757" alt="Screenshot 2026-10-22 at 8 39 18 AM" src="https://github.com/user-attachments/assets/ae6a8ee0-0eac-42ee-9c8c-cf8b867666e9" />
+
+
+# Lab 04 — Knowledge Management
+
+## Overview
+This lab explored ServiceNow Knowledge Management by creating a knowledge article, testing its review and approval workflow, and validating reader access through the Knowledge portal.
+
+## Objectives
+- Create and organize a knowledge article.
+- Understand the article review and approval process.
+- Verify article publication and search discoverability.
+- Test reader feedback functionality.
+- Document knowledge article access and related features.
+
+## Lab Parts Completed
+- **Part 1 — Knowledge Article Creation:** Created a Standard knowledge article titled "Troubleshooting Common Account Login Issues" in the IT Knowledge Base and assigned it to the IT category.
+- **Part 2 — Review Article Workflow:** Inspected the approval record, approved the article, and verified that its workflow changed from Review to Published.
+- **Part 3 — Validate Knowledge Access:** Confirmed the published article was accessible and searchable through the Knowledge portal, tested reader feedback, and inspected related articles and attachment availability.
+
+## Key Findings
+- ServiceNow enforced a minimum article length of more than 300 words.
+- Selecting Publish initiated a review workflow rather than immediately publishing the article.
+- The approval record initially showed Requested and changed to Approved after approval.
+- The article workflow subsequently changed to Published.
+- Article version history included versions 0.01 and 0.02.
+- The published article appeared in Knowledge search results.
+- Selecting Helpful displayed a confirmation, and three feedback records appeared after three clicks.
+- No related articles, attachments, or downloadable links were displayed for this article.
+
+## Security Analysis
+The knowledge article provided general account troubleshooting guidance, including credential verification, account lockout handling, application access checks, and escalation to IT support.
+
+The article emphasized safe account recovery practices and avoiding the disclosure of passwords or verification codes.
+
+This lab validated the basic publication and reader experience. It did not verify role-based access restrictions using a separate user account.
+
+## Skills Demonstrated
+- ServiceNow Knowledge Management
+- Knowledge article creation and categorization
+- Article review and approval workflows
+- Article version history inspection
+- Knowledge search and publication validation
+- Reader feedback testing
+- IT documentation and security awareness
+
+## Lab Conclusion
+This lab demonstrated the basic lifecycle of a ServiceNow knowledge article, from creation and review through approval, publication, and reader access validation.
+
+The exercise provided practical experience with knowledge content management and the workflow controls used to publish IT support documentation.
