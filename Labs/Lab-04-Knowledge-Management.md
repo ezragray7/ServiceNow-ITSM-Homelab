@@ -56,3 +56,62 @@ No real user credentials or sensitive account information were included in the a
 <img width="1512" height="749" alt="Screenshot 2026-10-21 at 2 30 04 PM" src="https://github.com/user-attachments/assets/b98cb63a-17c3-404b-b76f-9716330cbf61" />
 
 <img width="1512" height="258" alt="Screenshot 2026-10-21 at 2 33 11 PM" src="https://github.com/user-attachments/assets/46da7629-3836-4f6c-8737-9f8f31ee40b7" />
+
+# Lab 04 — Part 2: Review Article Workflow
+
+## Objective
+Inspect and validate the ServiceNow knowledge article review and approval workflow, approve the training article, and verify that it becomes available through the Knowledge portal.
+
+## Environment
+- Platform: ServiceNow Personal Developer Instance (PDI)
+- Module: Knowledge Management
+- Article: Troubleshooting Common Account Login Issues
+- Knowledge Base: IT Knowledge Base
+
+## Tasks Completed
+- [x] Located the article under My Knowledge Articles.
+- [x] Confirmed the article's Workflow field was set to Review.
+- [x] Inspected the Approvals tab.
+- [x] Found an approval record with the initial state Requested.
+- [x] Identified the approver listed on the record as Bernard Laboy.
+- [x] Inspected the Article Versions tab.
+- [x] Observed article versions 0.01 and 0.02.
+- [x] Confirmed version records displayed version, modified by, and modified on fields.
+- [x] Approved the requested approval record.
+- [x] Verified that the approval state changed to Approved.
+- [x] Returned to the article record and confirmed its Workflow field changed to Published.
+- [x] Opened the regular Knowledge portal and verified that the published article was visible.
+
+## Workflow Results
+The article initially entered the Review workflow after Publish was selected. Its approval record showed Requested. After the approval was granted, the approval state changed to Approved and the article's Workflow field changed to Published.
+
+The published article was subsequently visible through the regular Knowledge portal.
+
+## Version History Observations
+The Article Versions tab contained versions 0.01 and 0.02. The records displayed the version number, the user who modified the version, and the modification date and time.
+
+## Security Analysis
+The review and approval process provides a checkpoint before a knowledge article becomes available to readers. In a production environment, approval permissions and reviewer responsibilities should be configured according to organizational policy.
+
+The training article contains general account troubleshooting guidance and does not include real user credentials.
+
+## Key Takeaways
+- Saving an article and publishing it are separate actions.
+- Selecting Publish can initiate a review workflow.
+- Approval records can track the approval state.
+- Approving the request advanced this article to Published.
+- Published articles can be accessed through the regular Knowledge portal.
+- ServiceNow maintains article version history.
+
+## Skills Demonstrated
+- ServiceNow Knowledge Management
+- Knowledge article lifecycle management
+- Approval workflow validation
+- Article version history inspection
+- Publication verification
+- IT documentation and security awareness
+
+## Evidence
+<img width="1512" height="750" alt="Screenshot 2026-10-22 at 8 22 28 AM" src="https://github.com/user-attachments/assets/2db8c260-d3c2-4583-9bad-b4e6f4236d46" />
+
+<img width="1512" height="446" alt="Screenshot 2026-10-22 at 8 23 34 AM" src="https://github.com/user-attachments/assets/07c69675-f22e-45d3-8608-e42ac5dd87c2" />
