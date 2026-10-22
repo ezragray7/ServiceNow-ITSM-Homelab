@@ -51,3 +51,63 @@ Explore the ServiceNow Service Catalog, identify available catalog categories an
 
 ## Result
 Successfully explored the ServiceNow Service Catalog, identified available catalog items and an Order Guide, and reviewed the information collected by several request forms. No service request submission is documented in this part.
+
+# Lab 05 — Part 2: Service Request Submission and Approval
+
+## Objective
+Submit a test service request through the ServiceNow Service Catalog, inspect the resulting request record, and validate the approval workflow.
+
+## Tasks Completed
+- Submitted a test request using the **Request Knowledge Base** catalog item.
+- Entered a training-related reason and a proposed knowledge base name.
+- Received a confirmation message stating that the request had been received and that notification would follow after approval.
+- Located the request through **Self-Service > My Requests**.
+- Identified the request number as `REQ0010001`.
+- Inspected the request record and verified the following initial values:
+  - Requested for: System Administrator
+  - Approval: Requested
+  - Request State: Pending Approval
+- Opened the associated approval record.
+- Identified System Administrator as the approver.
+- Approved the request using the available **Approve** action.
+- Verified that the approval record's state changed to `Approved`.
+- Returned to the main request and verified that both Approval and Request State showed `Approved`.
+- Inspected the Requested Items related list and found no records associated with `REQ0010001`.
+- Checked the Requested Items list and did not find a requested item linked to this knowledge base request.
+
+## Security Analysis
+- Service Catalog requests can require approval before progressing through a workflow.
+- Approval records provide visibility into who is responsible for reviewing a request and whether a decision has been made.
+- Request approval and fulfillment are separate workflow stages. An approved request does not, by itself, prove that a requested item was generated or fulfilled.
+- Requested-item records (RITMs) are used to represent individual catalog items associated with a request.
+- Workflow validation should rely on the actual request and related records rather than assuming that approval automatically triggers fulfillment.
+
+## Key Takeaways
+- ServiceNow assigns a unique request number when a catalog request is submitted.
+- The My Requests page provides access to submitted request records.
+- The request initially entered a Pending Approval state.
+- The approval record was successfully approved.
+- The parent request's Approval and Request State fields both changed to Approved.
+- No associated Requested Item record was found for this request during validation.
+- Additional investigation would be needed to determine why the requested-item record was not visible or generated.
+
+## Skills Demonstrated
+- ServiceNow Service Catalog request submission
+- Request record navigation
+- Approval workflow inspection
+- Approval state validation
+- Requested-item record investigation
+- ITSM workflow troubleshooting
+- Evidence-based technical documentation
+
+## Evidence
+
+<img width="1512" height="432" alt="Screenshot 2026-10-22 at 9 10 00 AM" src="https://github.com/user-attachments/assets/8bde5a2a-04c2-40f5-b81b-01b9eb94bc8c" />
+<img width="1512" height="228" alt="Screenshot 2026-10-22 at 9 15 10 AM" src="https://github.com/user-attachments/assets/1bf01f40-97c1-4a5f-8c5f-2c65bc87da12" />
+<img width="1512" height="263" alt="Screenshot 2026-10-22 at 9 21 12 AM" src="https://github.com/user-attachments/assets/df1b9839-8105-4284-ae37-df0a186ca823" />
+<img width="1512" height="471" alt="Screenshot 2026-10-22 at 9 27 12 AM" src="https://github.com/user-attachments/assets/c2c18b7b-7612-46e6-a601-da54a34f14c3" />
+<img width="1512" height="471" alt="Screenshot 2026-10-22 at 9 29 12 AM" src="https://github.com/user-attachments/assets/dd2132de-47a5-496c-9477-43d5f43592ce" />
+
+
+## Result
+Successfully submitted and approved a ServiceNow knowledge base request. The request record reached an Approved state, but no associated Requested Item (RITM) was found during validation. The approval workflow was verified; end-to-end fulfillment was not confirmed.
