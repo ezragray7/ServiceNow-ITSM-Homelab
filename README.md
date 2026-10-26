@@ -51,15 +51,13 @@ The lab will use a ServiceNow Personal Developer Instance (PDI), subject to avai
 
 ## Project Status
 
-**Current Phase:** Initial documentation and environment setup.
+**Current Phase:** **Status:** Completed — 6 of 6 planned labs
 
-The ServiceNow developer environment has not yet been configured or verified. Lab completion status will be updated as each exercise is performed and validated.
+This project documents hands-on practice with ServiceNow IT Service Management (ITSM), covering incident management, prioritization and SLAs, knowledge management, service catalog and request fulfillment, and troubleshooting documentation and reporting.
 
 ## Evidence and Documentation
 
-Screenshots, configuration details, troubleshooting notes, and lab-specific documentation will be added as the project progresses.
-
-No credentials, passwords, API keys, session cookies, or other sensitive information will be included in this repository.
+Screenshots, configuration details, troubleshooting notes, and lab-specific documentation are included in each respective lab section.
 
 ## Disclaimer
 
