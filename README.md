@@ -29,12 +29,12 @@ The lab will use a ServiceNow Personal Developer Instance (PDI), subject to avai
 
 | Lab | Topic | Status |
 |---|---|---|
-| 01 | Incident Management | Planned |
-| 02 | Users and Assignment Groups | Planned |
-| 03 | Prioritization and SLA Management | Planned |
-| 04 | Knowledge Base Management | Planned |
-| 05 | Service Requests | Planned |
-| 06 | Troubleshooting Documentation and Reporting | Planned |
+| 01 | Incident Management | Completed |
+| 02 | Users and Assignment Groups | Completed |
+| 03 | Prioritization and SLA Management | Completed |
+| 04 | Knowledge Base Management | Completed |
+| 05 | Service Requests | Completed |
+| 06 | Troubleshooting Documentation and Reporting | Completed |
 
 *Lab scope and availability may be adjusted based on the features available in the developer instance.*
 
