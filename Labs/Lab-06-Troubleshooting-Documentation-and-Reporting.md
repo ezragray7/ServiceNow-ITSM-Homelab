@@ -77,3 +77,74 @@ Added a final work note explaining that the available information did not establ
 
 ## Result
 Part 1 is complete. The incident was reviewed, assigned to IT Support - Lab Team, and updated with three verified troubleshooting work notes. The investigation remains open for further technical validation because no root cause or resolution was confirmed.
+
+# Lab 06 — Part 2: Incident Reporting
+
+## Objective
+Create and validate a ServiceNow incident report to demonstrate incident reporting and data organization.
+
+## Report Configuration
+- **Report name:** ITSM - Homelab - Incident Report
+- **Source table:** Incident [incident]
+- **Report type:** List
+- **Group by:** Priority
+- **Displayed columns:**
+  - Number
+  - Short description
+  - Priority
+  - State
+  - Assignment group
+  - Assigned to
+  - Created
+- **Chart title:** Incident Distribution by Priority
+
+## Tasks Completed
+- Created a report using the Incident table.
+- Selected incident fields to display in the report.
+- Grouped incident records by priority.
+- Ran the report and reviewed the resulting incident groups.
+- Saved the report.
+- Returned to the reports list and confirmed the saved report was visible.
+
+## Results and Validation
+The report displayed 69 incident records across five priority groups:
+
+| Priority | Incident Count |
+|---|---:|
+| 1 - Critical | 28 |
+| 2 - High | 4 |
+| 3 - Moderate | 12 |
+| 4 - Low | 6 |
+| 5 - Planning | 19 |
+| **Total** | **69** |
+
+The report was saved and was visible when returning to the reports list.
+
+These counts represent the records present in the instance when the report was run. They are not limited to incidents created during this homelab.
+
+## Security and Operational Analysis
+Incident reports help support teams:
+- Identify the distribution of incident priorities.
+- Review ticket ownership and assignment.
+- Monitor incident states and descriptions.
+- Organize operational data for review and decision-making.
+
+Report results depend on the available records and the user's access permissions. Priority counts alone do not establish incident resolution performance or SLA compliance.
+
+## Key Takeaways
+- ServiceNow reports can summarize and organize incident records.
+- Grouping by priority makes the distribution of incident records easier to review.
+- Saving a report allows it to be accessed again.
+- Report data should be interpreted in the context of the underlying records.
+
+## Skills Demonstrated
+- ServiceNow report creation
+- Incident table selection
+- Report column configuration
+- Grouping and summarizing records
+- Report execution and validation
+- ITSM operational reporting
+
+## Evidence
+<img width="1512" height="758" alt="Screenshot 2026-10-26 at 10 44 23 AM" src="https://github.com/user-attachments/assets/9c2d600d-982e-42dc-93f2-67387930e246" />
+<img width="1512" height="129" alt="Screenshot 2026-10-26 at 10 48 06 AM" src="https://github.com/user-attachments/assets/2582981f-c40c-453d-a1ec-c07e8225e5b7" />
