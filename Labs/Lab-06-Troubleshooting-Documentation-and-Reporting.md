@@ -148,3 +148,132 @@ Report results depend on the available records and the user's access permissions
 ## Evidence
 <img width="1512" height="758" alt="Screenshot 2026-10-26 at 10 44 23 AM" src="https://github.com/user-attachments/assets/9c2d600d-982e-42dc-93f2-67387930e246" />
 <img width="1512" height="129" alt="Screenshot 2026-10-26 at 10 48 06 AM" src="https://github.com/user-attachments/assets/2582981f-c40c-453d-a1ec-c07e8225e5b7" />
+
+# Lab 06 — Part 3: Validation and Documentation
+
+## Objective
+Validate the troubleshooting documentation and incident report created during Lab 06, and prepare the results for a technical portfolio.
+
+## Tasks Completed
+
+### Troubleshooting Documentation Validation
+- Reopened incident INC0009009, "Unable to access shared folder."
+- Verified the assignment group was IT Support - Lab Team.
+- Verified the three troubleshooting work notes were present.
+- Confirmed the incident remained in the New state.
+
+### Incident Reporting Validation
+- Confirmed the saved report, "ITSM - Homelab - Incident Report," was visible in ServiceNow.
+- Configured the report using the Incident [incident] table.
+- Displayed incident details in a list.
+- Grouped records by Priority.
+- Ran the report and reviewed the results.
+
+## Results
+The incident report displayed 69 records grouped as follows:
+
+| Priority | Incident Count |
+|---|---:|
+| 1 - Critical | 28 |
+| 2 - High | 4 |
+| 3 - Moderate | 12 |
+| 4 - Low | 6 |
+| 5 - Planning | 19 |
+| **Total** | **69** |
+
+The report was saved and its presence was verified. The counts reflect the records available in the instance at the time of reporting.
+
+## Validation Notes
+- Troubleshooting notes document the investigation plan, not a confirmed technical root cause.
+- No fix was confirmed for INC0009009 during this lab.
+- The incident was not closed as part of the validation process.
+- The report summarizes incident records but does not independently establish SLA compliance or resolution effectiveness.
+
+## Key Takeaways
+- Clear work notes preserve investigation context and support handoffs between technicians.
+- Assignment groups help identify the team responsible for an incident.
+- Saved reports provide a repeatable way to review and organize incident data.
+- Validation helps ensure that documentation reflects the actual system state.
+
+## Skills Demonstrated
+- Incident record validation
+- Troubleshooting documentation review
+- Work note verification
+- Assignment group verification
+- ServiceNow report validation
+- ITSM documentation and portfolio preparation
+
+
+# Lab 06 — Troubleshooting Documentation and Reporting
+
+## Overview
+This lab focused on documenting incident troubleshooting activity, creating an incident report in ServiceNow, and validating that the records and report were saved correctly.
+
+## Objectives
+- Document troubleshooting steps using incident work notes.
+- Assign an incident to the appropriate support group.
+- Create and save an incident report.
+- Group incident records by priority.
+- Validate the results and prepare evidence for a technical portfolio.
+
+## Lab Parts Completed
+
+### Part 1 — Troubleshooting Documentation
+- Worked with incident `INC0009009`: "Unable to access shared folder."
+- Assigned the incident to `IT Support - Lab Team`.
+- Added three work notes documenting the initial investigation, troubleshooting plan, and review status.
+- Verified the assignment group and work notes.
+- Kept the incident in the New state because no root cause or resolution had been confirmed.
+
+### Part 2 — Incident Reporting
+- Created the report `ITSM - Homelab - Incident Report`.
+- Used the `Incident [incident]` table as the data source.
+- Configured a list report with incident fields, including number, short description, priority, state, assignment group, assigned to, and created date.
+- Grouped records by Priority.
+- Ran and saved the report, then confirmed it was visible in ServiceNow.
+
+#### Report Results
+The report displayed 69 incident records across five priority groups:
+
+| Priority | Incident Count |
+|---|---:|
+| 1 - Critical | 28 |
+| 2 - High | 4 |
+| 3 - Moderate | 12 |
+| 4 - Low | 6 |
+| 5 - Planning | 19 |
+| **Total** | **69** |
+
+These counts reflect the records available in the instance when the report was run, not only incidents created for this lab.
+
+### Part 3 — Validation and Documentation
+- Reopened incident `INC0009009`.
+- Verified the assignment group and troubleshooting work notes.
+- Confirmed the incident remained in the New state.
+- Confirmed the saved incident report was visible.
+- Prepared documentation and evidence references for the portfolio.
+
+## Security and Operational Analysis
+Accurate incident documentation helps preserve investigation history, improve technician handoffs, and support accountability. Assignment groups clarify team responsibility, while reports help support teams organize and review incident records.
+
+Reports must be interpreted in context. Priority counts alone do not establish resolution effectiveness, root cause, or SLA compliance. Troubleshooting notes should distinguish confirmed findings from planned investigative actions.
+
+## Key Takeaways
+- Work notes preserve troubleshooting context and the actions planned or performed.
+- Assignment groups identify the team responsible for handling an incident.
+- ServiceNow reports can organize incident records by priority.
+- Saved reports can be reopened for later review.
+- Validation ensures documentation reflects the actual state of the system.
+- Technical portfolios should clearly distinguish completed tests from unverified results.
+
+## Skills Demonstrated
+- ServiceNow incident management
+- Troubleshooting documentation
+- Incident assignment and ownership
+- Work note validation
+- Report creation and configuration
+- Data grouping and review
+- Technical documentation and evidence management
+
+## Conclusion
+This lab demonstrated how to document an incident investigation, organize incident ownership, generate a priority-based incident report, and validate saved ServiceNow records. The troubleshooting incident remained open because a technical root cause and resolution were not established during the exercise.
